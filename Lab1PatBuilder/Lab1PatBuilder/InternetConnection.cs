@@ -21,8 +21,8 @@ public class InternetConnection
             connection = new InternetConnection();
         }
 
-        public InternetConnectionBuilder WithProtocol(string protocol)//цей метод приймає рядок protocol і встановлює властивість Protocol
-                                                                      //об'єкта InternetConnection на передане значення protocol
+        public InternetConnectionBuilder WithProtocol(string protocol)
+            
         {
             connection.Protocol = protocol;
             return this;
@@ -40,9 +40,8 @@ public class InternetConnection
             return this;
         }
 
-        public InternetConnectionBuilder WithCustomProperty(string key, string value)//цей метод приймає два рядки: key і value. Він використовує
-                                                                                     //OtherProperties, як словник (Dictionary), щоб зберігати додаткові
-                                                                                     //користувацькі властивості об'єкта InternetConnection
+        public InternetConnectionBuilder WithCustomProperty(string key, string value)
+            
         {
             if (connection.OtherProperties == null)
             {
